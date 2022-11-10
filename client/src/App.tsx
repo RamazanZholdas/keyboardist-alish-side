@@ -22,12 +22,6 @@ function App() {
       const content = await response.json();
       const myArray = Object.values(response);
 
-      sleep(2000)
-        .then(() => {
-          alert('Welcome back');
-        })
-
-
       if (content.email !== undefined) {
         setUser(content.email);
         alert(content.email);
